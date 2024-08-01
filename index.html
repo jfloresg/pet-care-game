@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Game</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pet Care Game</h1>
+        <div id="pet-selection" class="pet-selection">
+            <h2>Select Your Pet</h2>
+            <div class="pet-options">
+                <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjIzODQwMjl8&ixlib=rb-4.0.3&q=85" alt="Dog" onclick="selectPet('dog')" class="pet-option">
+                <img src="https://images.unsplash.com/photo-1705147296072-6c5da9ca5c11?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjIzODQ1MjR8&ixlib=rb-4.0.3&q=85" alt="Cat" onclick="selectPet('cat')" class="pet-option">
+                <img src="https://images.unsplash.com/photo-1516478210106-0ff3684b2421?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjIzODQ3NjR8&ixlib=rb-4.0.3&q=85" alt="Bird" onclick="selectPet('bird')" class="pet-option">
+            </div>
+        </div>
+        <div id="pet-care" class="pet-care" style="display:none;">
+            <div class="pet">
+                <img src="" alt="Selected Pet" id="petImage">
+            </div>
+            <div class="status">
+                <p>Hunger: <span id="hungerStatus">100</span></p>
+                <p>Happiness: <span id="happinessStatus">100</span></p>
+            </div>
+            <div class="actions">
+                <button onclick="feedPet()">Feed</button>
+                <button onclick="playWithPet()">Play</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
